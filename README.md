@@ -61,6 +61,7 @@ Azure Web Application Firewall allows for L7 traffic inspection. As Microsoft Te
 
 APIM Gateway also operates at layer 7 providing the option to define request handling rules in policy. The below policy inspects the **x-ms-tenant-id** header and compares it against an allow list. If the heeder does not match allowed tenant id's the request will return a 401 unauthorized response thus locking down bot communication to your tenant.
 
+```xml
 \<set-variablename="isAllowedTenant"value="@(context.Request.Headers.GetValueOrDefault("x-ms-tenant-id","").Equals("\<TEAMS TENANT ID HERE\>"))"/\>
          \<choose\>
              \<whencondition="@(context.Variables.GetValueOrDefault\<bool\>("isAllowedTenant"))"\>
@@ -75,6 +76,7 @@ APIM Gateway also operates at layer 7 providing the option to define request han
                  \</return-response\>
              \</otherwise\>
          \</choose\>
+```
 
 ### Authorize User on Bot Application
 
