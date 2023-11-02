@@ -2,6 +2,7 @@
 
 @sethsteenken 
 @arekbar
+@sbanjanovic
 
 # Enterprise Security for Teams and Bot Framework Integration
 
