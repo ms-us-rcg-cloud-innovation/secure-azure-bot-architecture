@@ -1,3 +1,8 @@
+# Contributors
+
+@sethsteenken 
+@arekbar
+
 # Enterprise Security for Teams and Bot Framework Integration
 
 Enterprise organizations today surface innovation with OpenAI-powered Azure Bot Framework and Microsoft Teams. Azure Bot Services provide a multi-channel, multi-language interface that seamlessly connects Azure Bot Framework Bots with Microsoft Teams.
